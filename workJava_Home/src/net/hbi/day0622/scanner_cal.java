@@ -10,10 +10,10 @@ import java.util.StringTokenizer;
  *  버전 : 1.0
  *  
  *  문제점 : 수식 계산을 앞에서부터 진행함. 
- *  			수식을 제외한 것들을 입력하면 오류가 남
+ *  	    수식을 제외한 것들을 입력하면 오류가 남
  *  
  *  더 추가하고 싶은 내용 : push와 pop, ArrayList 사용. 
- *  									입력한 수식을 결과와 같이 표기 (StringBuilder를 이용하면 될거 같은데..)
+ *  			  입력한 수식을 결과와 같이 표기 (StringBuilder를 이용하면 될거 같은데..)
  * */
 
 public class scanner_cal {
@@ -25,7 +25,7 @@ public class scanner_cal {
 		
 		int result = cal(num);	//입력받은 수식을 계산하기 위해 'cal'메서드 호출 ->  result에 저장
 		System.out.println("결과 >>> "+result);		//cal 메서드에서 반환된 result -> 
-																		//윗 줄의 result 변수 값을 출력하기 위해 사용
+								//윗 줄의 result 변수 값을 출력하기 위해 사용
 		
 		sc.close();
 	}//main
@@ -54,7 +54,7 @@ public class scanner_cal {
 					result  = a;
 				}else {
 					result = cal2(result, a, b);		//이전에 저장한 연산자가 있는 경우 cal2메서드 불러서 연산 
-																//-> result에 저장
+										//-> result에 저장
 				}//if~else
 			}//if~else
 		}//while
