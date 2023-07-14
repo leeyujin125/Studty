@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Join</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+      body{
+        padding: 30px 100px;
+        line-height: 2.0em;
+    }
+      img{
+        width: 100px;
+    }
+      .google{
+        font-size: 18px;
+        border: 1px solid rgb(207, 199, 199);
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        width: 460px;
+        height: 560px;
+    }
+      .last{
+        padding-top: 20px;
+        text-align: left;
+        font-size: 18px;
+    }
+      span{
+        font-size: 13px;
+        color: rgb(148, 143, 143);
+    }
+      a{
+        font-size: 15px;
+        text-decoration: none;
+        color: rgb(48, 109, 189);
+    }
+      input[type=text]{
+        width: 200px;
+        height: 40px;
+    }
+      input[type=email]{
+        width: 408px;
+        height: 40px;
+    }
+      input[type=submit]{
+        border: 0px;
+        border-radius: 3px;
+        background-color: rgb(3, 128, 245);
+        font-size: 15px;
+        color: white;
+        width: 80px;
+        height: 35px;
+        float: right;
+    }
+      input[type=password]{
+        width: 200px;
+        height: 40px;
+    }
+      input:focus{
+        outline: 2px solid rgb(68, 141, 250);
+        border-radius: 3px;
+    }
+      select[name="lang"]{
+        width: 180px;
+        height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="google">
+    <img src="./images/google_logo.png" alt="구글_로고"> <p></p>
+    <b style="font-size: 23px;">Google 계정 만들기</b><p></p>
+    <div class="main">
+      <input type="text" placeholder="성">
+      <input type="text" placeholder="이름">
+    </div><p></p>
+    <div class="main">
+      <input type="email" name="email" placeholder="사용자 이름"><br>
+      <span>문자,숫자,마침표를 사용할 수 있습니다</span> <br>
+      <a href="#">대신 현재 이메일 주소 사용</a>
+    </div>
+    <p></p>
+    <div class="main">
+      <input type="password" placeholder="비밀번호">
+      <input type="password" placeholder="확인"> <br>
+      <span>문자,숫자,기호를 조합하여 8자 이상을 사용하세요</span> <br>
+      <label><input type="checkbox" value="look_pw">비밀번호 표시</label>
+    </div>
+    <p></p>
+    <div class="main">
+      <a href="#">대신 로그인하기</a>
+      <input type="submit" value="다음" style="margin-right: 20px;">
+    </div>
+  </div>
+  <div class="last">
+    <select name="lang" id="lang">
+      <option value="kor">한국어</option>
+      <option value="jap">일본어</option>
+      <option value="eng">English</option>
+    </select>
+    <span>도움말</span>
+    <span>개인정보처리방침</span>
+    <span>약관</span>
+  </div>
+</body>
+</html>
