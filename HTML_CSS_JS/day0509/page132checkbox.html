@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page132form</title>
+</head>
+<body>
+    <h2>page132form</h2>
+    <form name="myform" method="get" action="">
+        <fieldset>
+            <legend>초간단 아이디 비밀번호</legend>
+            <label for="user_id">아이디: <input type="text" id="user_id"></label> <br>
+            <label for="user_pw">비밀번호: <input type="password" id="user_pw"></label> <br>
+            <label for="mail">이메일: <input type="email" id="mail"></label> <br>
+            <label for="phone">연락처: <input type="tel" id="phone"></label> <br>
+            <p></p>
+            <b>주문할 상품을 선택해 주세요.</b> <p></p>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <label><input type="checkbox" value="f_3">가정용 3kg</label>
+            <label><input type="checkbox" value="f_5">가정용 5kg</label>
+            <p><b>포장 선택</b></p>
+            <label><input type="radio" name="gift" value="yes">선물 포장</label>
+            <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+            <p></p>
+            <input type="submit" value="완료">
+            <input type="reset" value="입력 취소">
+        </fieldset>
+    </form>
+    <p style="margin-bottom: 30px;" />
+
+    <form name="myform" method="get" action="">
+        이름: <input type="text" id="name"> <br>
+        주민번호: <input type="tel" name="number"> - <input type="tel" name="number"><br>
+        이메일: <input type="email" id="mail"> <br>
+        연락처: <input type="tel" id="phone"> <p></p>
+        <b>주문할 상품을 선택해 주세요.</b> <p></p>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <label><input type="checkbox" value="f_3">가정용 3kg</label>
+            <label><input type="checkbox" value="f_5">가정용 5kg</label>
+            <p><b>포장 선택</b></p>
+            <label><input type="radio" name="gift" value="yes">선물 포장</label>
+            <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+            <p></p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

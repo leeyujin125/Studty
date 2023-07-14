@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>workBillGates</title>
+  <style>
+    *{
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h2>여러개의 컬럼(culumn) 합치기🤔</h2>
+  <table border="1"  cellspacing="0" cellpadding="10">
+    <tr>
+      <th>이름</th>
+      <th colspan="3">전화번호</th>
+      <th colspan="2">전자 메일</th>
+    </tr>
+    <tr>
+      <td>홍길동</td>
+      <td>010-1234-5678</td>
+      <td>010-1111-2222</td>
+      <td>010-2000-0813</td>
+      <td>reason@lg.com</td>
+      <td>mail123@skt.com</td>
+    </tr>
+  </table>
+  <p></p>
+  <hr>
+  <p></p>
+  <h2>여러개의 로우(row) 합치기🤔</h2>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>이름</th>
+      <td>홍길동</td>
+    </tr>
+    <tr>
+      <th rowspan="2">연락처</th>
+      <td>010-0000-0000</td>
+    </tr>
+    <tr>
+      <td>010-0000-0000</td>
+    </tr>
+    <tr>
+      <th rowspan="2">전자 메일</th>
+      <td>because@ss.com</td>
+    </tr>
+    <tr>
+      <td>eu@naver.com</td>
+    </tr>
+  </table>
+</body>
+</html>

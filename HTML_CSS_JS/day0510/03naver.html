@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVER</title>
+  <style>
+    .last2{
+      margin-left: 65px;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/naver.css">
+</head>
+<body>
+  <div class="member">
+    <img src="../../images/logo_naver.png" class="logo" alt="네이버_로고">
+    <form action="">
+      <div class="field">
+        <b>아이디</b>
+        <span class="placehold-text">
+          <input type="text" style="text-align: right;" value="@naver.com">
+        </span>
+      </div>
+      <div class="field">
+        <b>비밀번호</b>
+        <input type="password">
+      </div>
+      <div class="field">
+        <b>비밀번호 재확인</b>
+        <input type="password">
+      </div>
+      <div class="field">
+        <b>이름</b>
+        <input type="text">
+      </div>
+      <div class="field birth">
+        <b>생년월일</b>
+        <div>
+          <input type="tel" placeholder="년(4자)" maxlength="4" id="year">
+          <select name="month" id="month">
+            <option value="month" selected>월</option>
+            <option value="1m">1월</option>
+            <option value="2m">2월</option>
+            <option value="3m">3월</option>
+            <option value="4m">4월</option>
+            <option value="5m">5월</option>
+            <option value="6m">6월</option>
+            <option value="7m">7월</option>
+            <option value="8m">8월</option>
+            <option value="9m">9월</option>
+            <option value="10m">10월</option>
+            <option value="11m">11월</option>
+            <option value="12m">12월</option>
+          </select>
+          <input type="number" placeholder="일" min="1" max="31" id="day">
+        </div>
+      </div>
+      <div class="field">
+        <b>성별</b>
+        <select name="gender" id="gender">
+          <option value="gender" selected>성별</option>
+          <option value="male">남성</option>
+          <option value="female">여성</option>
+          <option value="none">선택 안함</option>
+        </select>
+      </div>
+      <div class="field">
+        <b>본인확인 이메일</b> <font style="font-size: 12px; color: gray;">(선택)</font>
+        <input type="text" placeholder="선택입력">
+      </div>
+      <div class="field.tel-number">
+        <div>
+          <b>휴대전화</b>
+          <select name="phone" id="phone">
+            <option value="korea" selected>대한민국 +82</option>
+            <option value="japan">일본 +81</option>
+            <option value="england">영국 +44</option>
+            <option value="usa_canada">미국/캐나다 +1</option>
+            <option value="china">중국 +86</option>
+            <option value="sweden">스웨덴 +46</option>
+            <option value="swis">스위스 +41</option>
+          </select>
+          <input type="tel" placeholder="전화번호 입력" style="width: 280px;">
+          <input type="button" value="인증번호 받기" style="width: 136px;">
+          <input type="text" placeholder="인증번호를 입력하세요">
+        </div>
+      </div>
+      <br>
+      <div class="field">
+        <input type="submit" value="가입하기">
+      </div>
+      <div id="last">
+        <font style="font-size: 13px;">이용약관｜</font>
+        <font style="font-size: 13px; font-weight: bold;">개인정보처리방침｜</font>
+        <font style="font-size: 13px;">책임의 한계와 법적고지｜</font>
+        <font style="font-size: 13px;">회원정보 고객센터</font>
+      </div>
+      <div class="last2">
+        <img src="../image/logo_naver.png" alt="네이버_로고" width="65px">&nbsp;&nbsp;&nbsp;
+        <font style="font-size: 7px;">Copyright</font>
+        <font style="font-size: 7px; font-weight: bold;">NAVER Corp.</font>
+        <font style="font-size: 7px;">&nbsp;All Rights Reserved.</font>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

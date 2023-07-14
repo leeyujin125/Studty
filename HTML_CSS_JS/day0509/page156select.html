@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select</title>
+</head>
+<body>
+  <blockquote>
+  <form>
+    <label for="user_id">아이디: <input type="text" id="user_id"></label>
+    <label for="user_pw">비밀번호: <input type="text" id="user_pw"></label> <p></p>
+    <label for="">파일: <input type="file"></label> <br>
+    <label for=""><input type="hidden" value="789"></label><!--히든 속성은 보이지 않지만 답은 넘어감-->
+    <label for="">내용: <textarea name="" id="" cols="50" rows="5"></textarea></label>
+    <p></p>
+    <label for="prod1">상품 선택</label>
+    <select name="prod1" id="prod1">
+      <option value="choice" selected>-----상품을 선택하세요.-----</option>
+      <option value="special_3">선물용 3kg</option>
+      <option value="special_5">선물용 5kg</option>
+      <option value="family_3">가정용 3kg</option>
+      <option value="family_5">가정용 5kg</option>
+    </select> <p></p>
+    <label for="prod2">데이터 리스트</label>
+    <input type="text" id="prod2" list="pack">
+    <datalist id="pack">
+      <option value="package">선물포장</option>
+      <option value="no_package">포장 안 함</option>
+    </datalist>
+    <p></p>
+    <input type="submit" value="로그인">
+    <input type="reset" value="입력취소">
+    <p></p>
+  </form>
+</blockquote>
+</body>
+</html>
