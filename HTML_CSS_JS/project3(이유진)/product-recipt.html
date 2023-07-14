@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문폼</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+  *{
+    font-size: 15pt;
+    font-family: 초롱바탕체, consolas;
+  }
+  #btn, #btn_1, #btn_2{
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: burlywood;
+    font-weight: bold;
+    background-color: rgb(187, 126, 12);
+    padding: 15px;
+    font-family: 'Nanum Pen Script', cursive;
+    margin-left: 10px;
+  }
+  #area{
+    border: none;
+    border-radius: 10px;
+    background-image: url(./image/desk.jpg);
+    background-size: 100%;
+    width: 650px;
+    height: 450px;
+    margin-left: 10px;
+    color: burlywood;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: 3px 3px 5px rgb(95, 69, 21);
+  }
+  font,form{
+    font-weight: bold;
+    font-size: 20pt;
+    padding: 10px;
+    color: burlywood;
+  }
+  table{
+    padding: 15px;
+  }
+</style>
+<script>
+    function mybtn_2(){
+      alert('상품 목록을 불러오는 중입니다.');
+      var myproduct = 'myproduct.html';
+      window.location.href=myproduct;
+    }
+    function mybtn(){
+      alert('웹 사이트로 돌아갑니다.');
+      var index = "index.html";
+      window.location.href = index;
+    }
+    function mycal(){
+      var message='', data='', info='', result=''; //문자 안내문 변수
+      var price1=0, Gdrink=0, price2=0, Ganju=0, Gtotal=0; //숫자 계산 합계 변수
+
+      var drink=document.myform.drink.value;
+      var num1=document.myform.count1.value;
+      var anju=document.myform.anju.value;
+      var num2=document.myform.count2.value;
+
+      if(drink=='아메리카노'){
+        price1=3000;
+      }
+      else if(drink=='카페라떼'){
+        price1=2000;
+      }
+      else if(drink=='초코라떼'){
+        price1=5000;
+      }
+      else {}
+
+      if(anju=='티라미수'){
+        price2=7500;
+      }
+      else if(anju=='녹차'){
+        price2=8500;
+      }
+      else if(anju=='바스크'){
+        price2=7500;
+      }
+      else if(anju=='당근'){
+        price2=6500;
+      }
+      else if(anju=='선인장'){
+        price2=7500;
+      }
+      else if(anju=='크림'){
+        price2=5500;
+      }
+      else {}
+
+      Gdrink=num1*price1;
+      Ganju=num2*price2;
+      Gtotal=Gdrink+Ganju;
+
+      result=document.getElementById('count1').innerHTML.value
+      data='\n\n\t'+'음료: '+drink+'\t주문수량: '+num1+'\t합계: '+Gdrink+'원\n';
+      info=document.getElementById('count2').innerHTML.value
+      data=data+'\t케익: '+anju+'\t주문수량: '+num2+'\t합계 :'+Ganju+'원\n\n';
+      data=data+'\t\t\t총 합계: '+Gtotal+'원';
+      document.myform.area.value=data;
+      alert('주문이 완료되었습니다! ');
+    }//mycal()함수 end
+</script>
+</head>
+<body oncontextmenu="return false">
+    <font> 상품 주문하기 </font>
+    <form name="myform">
+        <table border="0">
+            <tr> 
+				<td width=80><b>음료종류<b></td>
+				<td width=50><b>갯수 </b></td>
+            </tr>
+			<tr>
+			<td width = 80>
+				<select name="drink" id="drink">
+                    <option value="아메리카노"> 아메리카노(3,000원)
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;
+                    </option>
+                    <option value="카페라떼"> 카페라떼(2,000원)</option>
+                    <option value="초코라떼"> 초코라떼(5,000원)</option>
+                </select>
+			</td>
+			<td width = 50>
+				<input type="text" name="count1" id="count1">
+			</td>
+      <td>
+        <tr>
+          <td width=80><b>케익종류</b></td>
+          <td width=50><b>갯수<b></td>
+        </tr>
+      </td>
+            <td width = 80>
+                <select name="anju" id="anju">
+                   <option value="티라미수"> 티라미수 케이크(7,500원)</option>
+                   <option value="녹차"> 녹차 케이크(8,500원)</option>
+                   <option value="바스크"> 바스크 치즈케이크(7,500원)</option>
+                   <option value="당근"> 당근 크림치즈 컵 케이크(6,500원)</option>
+                   <option value="선인장"> 선인장 딸기초코 컵 케이크(7,500원)</option>
+                   <option value="크림"> 크림 카스테라(5,500원)</option>
+                </select>
+            </td>
+               <td width=50>
+               <input type="text" name="count2" id="count2">
+               </td></tr>
+        </table>
+        <p></p>
+        <input type="button" id="btn"  value="🥖주문하기☕"
+			  onClick="mycal( )"  style="font-size:20pt;">
+
+        <input type="button" id="btn_1" value="🤗사이트 돌아가기🤗"
+        onClick="mybtn()" style="font-size: 20pt;">
+
+        <input type="button" id="btn_2" value="🤔상품 목록 다시보기🤔"
+        onclick="mybtn_2()" style="font-size: 20pt;">
+        <p></p>
+        <textarea name="result" rows="10"  cols="70" id="area"
+          style="font-size:25pt; font-weight: bold;"></textarea>
+    </form>
+
+    <p></p>
+    <div id="display">
+    </div>

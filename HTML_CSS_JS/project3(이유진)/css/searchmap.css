@@ -1,0 +1,127 @@
+.route .item{
+  padding: 34px 0 40px;
+  border-bottom: 1px dashed #ddd;
+}
+dl{
+  display: block;
+}
+dt{
+  margin-left: 460px;
+  float: left;
+  width: 180px;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+dd{
+  float: left;
+  width: 1020px;
+}
+.grid-row{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.road{
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+  text-size-adjust: none;
+}
+.label label-border01{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+}
+.label-border02{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid #5e81d5;
+  color: #4368c1 !important;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+}
+.label-border01{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+}
+.label-border03{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid purple;
+  color: white !important;
+  background-color: purple;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+.label-border04{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid darkorange;
+  background-color: darkorange;
+  color: white !important;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+.label-border05{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid green;
+  color: white !important;
+  background-color: green;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+.label-border06{
+  min-width: 56px;
+  margin-right: 13px;
+  border: 1px solid blue;
+  color: white !important;
+  background-color: blue;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+}

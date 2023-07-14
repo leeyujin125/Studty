@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>오시는 길 | 에이콘병원</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/searchmap.css">
+</head>
+<body  onload="myMap()" oncontextmenu="return false">
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"> <img src="image/제목 없음.png" style="margin-top: 45px;">에이콘병원 </a>
+            </div>
+            <ul class="sidemenu">
+               <li><a href="index.html">Home</a></li> 
+               <li><a href="searchmap.html">Sitemap</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- //header -->
+	<!-- nav --------------------------------------------- -->
+	<nav>
+		<div class="container">
+			<ul class="leftMenu">
+				<li class="dropBox">
+					메인갤러리 
+					<span class="dropmenu"> 
+						<span><a href="index.html">index</a></span> 
+						<span><a href="gallery.html">갤러리</a></span>
+					</span>
+				</li>
+
+				<li class="dropBox" style="z-index:5">
+					게시판 
+					<span class="dropmenu"> 
+						<span><a href="board.html">자유 게시판</a></span> 
+						<span><a href="#">문의 게시판</a></span> 
+					</span>
+				</li>
+				<li class="dropBox" style="z-index:5">
+					<a href="">멀티미디어</a> 
+					<span class="dropmenu"> 
+						<span><a href="#">음악듣기</a></span> 
+						<span><a href="video.html">동영상보기</a></span> 
+					</span>
+				</li>
+				<li class="dropBox">
+					<a href="">상품정보</a>
+					<span class="dropmenu">
+                        <span> <a href="Image.html">주의사항</a> </span>
+						<span> <a href="myproduct.html" target="_blank">상품 주문</a> </span>
+					</span>
+				</li>
+
+				<li class="dropBox">
+					<a href="">이용안내</a>
+					<span class="dropmenu">
+						<span> <a href="searchmap.html">오시는 길</a> </span>
+						<span> <a href="about.html">About</a> </span>
+					</span>
+				</li>
+			</ul>
+			<ul class="rightMenu">
+				<li><a href="join.html">회원가입</a></li>
+				<li><a href="login.html">로그인</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- //nav -->
+	
+	<!-- section7 --------------------------------------------- -->
+    <section id="section7">
+      <h2 style="margin-left: 460px;">오시는 길</h2> <br>
+	    <div align="center">
+	      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50606.46774010349!2d126.76416592167966!3d37.55732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d53d5ae7753%3A0xab7eac01f7498519!2z7J2064yA7ISc7Jq467OR7JuQ!5e0!3m2!1sko!2skr!4v1684976242751!5m2!1sko!2skr" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	    </div>
+      <div class="route">
+        <dl class="item">
+          <dt>주소</dt>
+          <dd>
+            <div class="grid-row">
+              <div class="road">
+                <span class="label label-border01">지번</span>
+                <em>서울특별시 한양구 조선동 526 에이콘병원</em>
+              </div>
+              <div class="road">
+                <span class="label label-border02">도로</span>
+                <em>서울특별시 한양구 조선시대로 24 에이콘병원</em>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="item">
+          <dt>지하철</dt>
+          <dd>
+            <div class="grid-row">
+              <div class="road">
+                <span class="label label-border03">X호선</span>
+                <em>XX역 8번출구 옆 에이콘병원 연결통로</em>
+              </div>
+              <div class="road">
+                <span class="label label-border04">A호선</span>
+                <em>AA역 5번출구 → ## 버스 탑승 → XX역 정류장 하차</em>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl class="item">
+          <dt>버스</dt>
+          <dd>
+            <div class="grid-row">
+              <div class="road">
+                <span class="label label-border05">일반</span>
+                <em>##, @@, ##$, $%#</em>
+              </div>
+              <div class="road">
+                <span class="label label-border06">간선</span>
+                <em>&&&&, %%%, #-02</em>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+    </section>
+    <div class="clear"></div>
+    <p style="margin-bottom: 50px;"></p>
+    <!-- //section7 -->
+    
+    <!-- footer --------------------------------------------- -->
+    <footer>    
+        <div class="top">
+            <div class="container">
+                <span>다운로드</span>
+                <span>개인정보처리방침</span>
+                <span>저작권지침및신고</span>
+                <span>이메일무단수집거부</span>
+            </div>
+        </div>
+        <div class="container">
+            <strong>
+                Home : Location Log : Tag Log : Media Log : Guestbook : Admin : New Post
+            </strong>
+            <div class="copyright">
+              (주)K-COM 서울 한양구 조선시대로 24
+            </div>
+        </div>
+    </footer>
+    <!-- //footer --------------------------------------------- -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClA4imlqCx2AJcHUjL67VHPPUCcRBmaDA"></script>
+
+</body>
+</html>

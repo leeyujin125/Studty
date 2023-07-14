@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 주문</title>
+  <link rel="stylesheet" href="./css/product-workboot.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function thisbtn(){
+      alert('웹 사이트로 돌아갑니다.');
+      var index = "index.html";
+      window.location.href = index;
+    }
+    function thatbtn(){
+      alert('페이지 이동 중 입니다.');
+      var image = "image.html";
+      window.location.href = image;
+    }
+    function thosebtn(){
+      alert('주문서로 이동합니다.');
+      var recipt = "product-recipt.html";
+      window.location.href = recipt;
+    }
+  </script>
+</head>
+<body oncontextmenu="return false">
+  <div id="container">
+    <h1 style="margin-left: 10px; font-weight: bold;">상품 목록</h1>
+    <ul class="prod-list">
+      <li>
+        <img src="./image/cake1.jpg" alt="티라미수">
+        <div class="caption">
+          <h2>티라미수 케이크</h2>
+          <p>커피, 카카오, 마스카르포네 치즈 등의 재료로 만든 이탈리아의 디저트.</p>
+          <p>가격 : 7,500원</p>
+        </div>
+      </li>
+      <li>
+        <img src="./image/cake2.jpg" alt="녹차">
+        <div class="caption">
+          <h2>녹차 케이크</h2>
+          <p>진한 녹차와 크림치즈의 완벽한 밸런스가 느껴지는 프리미엄 케이크.</p>
+          <p>가격 : 8,500원</p>
+        </div>
+      </li>
+      <li>
+        <img src="./image/cake3.jpg" alt="바스크_치즈">
+        <div class="caption">
+          <h2>바스크 치즈케이크</h2>
+          <p>스페인 바스크 지역의 한 식당에서 유래한 지역 전통 치즈케이크.</p>
+          <p>가격 : 7,500원</p>
+        </div>
+      </li>
+      <li>
+        <img src="./image/케이크1.jpg" alt="당근">
+        <div class="caption">
+          <h2>당근 크림치즈 컵 케이크</h2>
+          <p>제주에서 재배한 당근과 크림치즈를 넣어 만든 컵 케이크</p>
+          <p>가격 : 6,500원</p>
+        </div>
+      </li>
+      <li>
+        <img src="./image/케이크2.jpg" alt="선인장">
+        <div class="caption">
+          <h2>선인장 딸기초코 컵 케이크</h2>
+          <p>딸기맛 크림과 초코시트에 견과류를 뿌리고 선인장 초콜릿을 장식한 컵 케이크</p>
+          <p>가격 : 7,500원</p>
+        </div>
+      </li>
+      <li>
+        <img src="./image/케이크3.jpg" alt="크림 카스테라">
+        <div class="caption">
+          <h2>크림 카스테라</h2>
+          <p>깔끔한 우유크림을 넣어만든 부드러운 식감의 카스테라</p>
+          <p>가격 : 5,500원</p>
+        </div>
+      </li>
+    </ul>
+    <button onclick="thisbtn()" class="btn btn-success" style="margin-left: 10px;">사이트 돌아가기</button> 
+    <button onclick="thatbtn()" class="btn btn-primary" style="margin-left: 10px;">주의사항 안내</button>
+    <p></p>
+    <button onclick="thosebtn()" class="btn btn-danger" style="margin-left: 10px;">👉주문 하러가기👈</button>
+  </div>
+</body>
+</html>
